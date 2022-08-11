@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Films!</title>
+    <link rel="stylesheet" href="film.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="film.js"></script>
+
+    <h1>FILM VOTE</h1>
+    <hr>
+
+    <form id="myform" action="https://webdevcit.com/displayvalues.php">
+        <div id="login">
+            <div id="entry">
+                <div>
+                    <div id="nameError">Please enter a name!<span class="arrow"></span></div>
+                    <label for="nameField" class="field">Name</label> <input type="text" id="nameField"
+                        class="nameField" name="name">
+                </div>
+
+                <div>
+                    <div id="emailErrorEmpty">Please enter an email!<span class="arrow"></span></div>
+                    <div id="emailErrorInvalid">Please enter a valid email!<span class="arrow"></span></div>
+                    <label for="emailField " class="field">Email</label><input type="text" id="emailField"
+                        class="emailField" name="email">
+
+                </div>
+
+                <div>
+                    <div id="passErrorEmpty">Please enter a password!<span class="arrow"></span></div>
+                    <div id="passErrorInvalid">4 charecters or longer!<span class="arrow"></span></div>
+                    <label for="passField" class="field">Password</label><input type="password" id="passField"
+                        class="passField" name="Password">
+                </div>
+            </div>
+            <input type="submit" value="VOTE">
+        </div>
+        <h2>Favourite versions</h2>
+        <div id="checkEmpty">Please chose atleast one film!<span class="arrow"></span></div>
+        <div id="outer"></div>
+        <div id="clear"></div>
+    </form>
+</body>
+
+</html>
